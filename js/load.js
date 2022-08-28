@@ -1,7 +1,10 @@
 /* --- INTERFACE CSS --- */
 
-const STYLE_URL = 'https://raw.githack.com/vodnibivol/yt_unhook/main/css/style.css';
-document.head.insertAdjacentHTML('beforeend', `<link rel="stylesheet" href="${STYLE_URL}">`);
+const MAIN_STYLE_URL = 'https://raw.githack.com/vodnibivol/yt_unhook/main/css/style.css';
+document.head.insertAdjacentHTML('beforeend', `<link rel="stylesheet" href="${MAIN_STYLE_URL}">`);
+
+const HTML_STYLE_URL = 'https://raw.githack.com/vodnibivol/yt_unhook/main/css/style.css';
+document.head.insertAdjacentHTML('beforeend', `<link rel="stylesheet" href="${HTML_STYLE_URL}">`);
 
 /* --- INTERFACE HTML --- */
 
