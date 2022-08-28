@@ -1,9 +1,9 @@
-/* --- CSS --- */
+/* --- INTERFACE CSS --- */
 
 const STYLE_URL = 'https://raw.githack.com/vodnibivol/yt_unhook/main/css/style.css';
 document.head.insertAdjacentHTML('beforeend', `<link rel="stylesheet" href="${STYLE_URL}">`);
 
-/* --- HTML --- */
+/* --- INTERFACE HTML --- */
 
 const HTML = `\
 <button id="yt-unhook-btn"></button>
@@ -12,7 +12,7 @@ const HTML = `\
 
 document.body.insertAdjacentHTML('beforeend', HTML);
 
-/* --- JS --- */
+/* --- INTERFACE JS --- */
 
 const SCRIPT_URL = 'https://raw.githack.com/vodnibivol/yt_unhook/main/js/script.js';
 const SCRIPT = document.createElement('script');

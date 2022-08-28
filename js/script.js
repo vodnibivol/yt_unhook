@@ -24,8 +24,8 @@ const Unhook = (function () {
     new Element('#comment-teaser', 'comment teaser'),
     new Element('.html5-endscreen', 'endscreen'),
     new Element('#primary.ytd-watch-flexy', 'center', '{position:relative;left:49%;transform:translateX(-50%);}'),
-    new Element('#ytd-guide-signin-promo-renderer,a[href*="Login"]', 'login promo'),
-    new Element('#yt-unhook-btn', 'button left', '{left: 0;}'),
+    new Element('ytd-guide-signin-promo-renderer,a[href*="Login"]', 'login promo'),
+    new Element('#yt-unhook-btn', 'button left', '{left: 1rem;}'),
   ];
 
   // events
