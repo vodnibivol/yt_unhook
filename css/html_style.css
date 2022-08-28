@@ -140,5 +140,5 @@ html[button_left='true'] #yt-unhook-btn {
 
 html[hide_sign_in='true'] ytd-guide-signin-promo-renderer,
 html[hide_sign_in='true'] tp-yt-paper-button[aria-label='Sign in'] {
-  left: 1.5rem !important;
+  display: none !important;
 }
