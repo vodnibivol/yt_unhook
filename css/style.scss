@@ -1,18 +1,19 @@
 #yt-unhook-btn {
   z-index: 10000;
-  position: absolute;
+  position: fixed;
   bottom: 1rem;
-  left: 1rem;
+  right: 1rem;
   border: none;
   width: 30px;
   height: 30px;
   background: white;
   box-shadow: 0 0 10px #00000044;
   border-radius: 50%;
-  /* transition: box-shadow 0.1s; */
   cursor: pointer;
   opacity: 0.9;
+
   // transition: opacity 0.2s;
+  /* transition: box-shadow 0.1s; */
 
   &:hover {
     opacity: 1;
@@ -37,7 +38,6 @@
 
   form {
     background: white;
-    // padding: 1rem;
     font-family: Menlo, Consolas, monospace;
     font-size: 13px;
     border: 2px solid black;
