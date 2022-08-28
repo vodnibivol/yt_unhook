@@ -59,11 +59,11 @@ const ATTRS = [
   { for: 'hide_feed', name: 'Hide Home Feed' }, // NOTE: submenu
   // { for: 'hide_redirect_home', name: 'Redirect to Subscriptions' },
   { for: 'hide_sidebar', name: 'Hide Video Sidebar' }, // NOTE: submenu
-  // { for: 'hide_recommended', name: 'Hide Recommended' },
-  // { for: 'hide_chat', name: 'Hide Live Chat' },
-  // { for: 'hide_playlists', name: 'Hide Playlist' },
-  // { for: 'hide_donate', name: 'Hide Fundraiser' },
-  // { for: 'hide_transcript', name: 'Hide Transcript, Chapters' },
+  { for: 'hide_recommended', name: 'Hide Recommended' },
+  { for: 'hide_chat', name: 'Hide Live Chat' },
+  { for: 'hide_playlists', name: 'Hide Playlist' },
+  { for: 'hide_donate', name: 'Hide Fundraiser' },
+  { for: 'hide_transcript', name: 'Hide Transcript, Chapters' },
   { for: 'hide_endscreen', name: 'Hide End Screen Feed' },
   { for: 'hide_cards', name: 'Hide End Screen Cards' },
   { for: 'hide_comments', name: 'Hide Comments' }, // NOTE: submenu
