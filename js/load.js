@@ -7,7 +7,15 @@ document.head.insertAdjacentHTML('beforeend', `<link rel="stylesheet" href="${ST
 
 const HTML = `\
 <button id="yt-unhook-btn"></button>
-<div id="yt-unhook-menu"><form action="#"></form></div>
+<div id="yt-unhook-menu">
+  <form action="#">
+    <div class="header">
+      <span>Hide...</span>
+      <div id="yt-unhook-close"></div>
+    </div>
+    <div class="content"></div>
+  </form>
+</div>
 `;
 
 document.body.insertAdjacentHTML('beforeend', HTML);
