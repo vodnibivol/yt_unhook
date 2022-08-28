@@ -1,4 +1,4 @@
-const PATH = 'https://github.com/vodnibivol/yt_unhook.git/';
+const PATH = 'https://raw.githubusercontent.com/vodnibivol/yt_unhook/main/';
 
 /* --- HTML --- */
 
