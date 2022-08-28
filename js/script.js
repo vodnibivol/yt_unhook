@@ -31,12 +31,12 @@ const Unhook = (function () {
   // events
   $('#yt-unhook-btn').addEventListener('click', () => $('#yt-unhook-menu').classList.remove('unhook-hidden'));
   $('#yt-unhook-menu').addEventListener('click', function (e) {
-    if (e.target === this) this.classList.add('unhook-hidden');
+    if (e.target.matches("#yt-unhook-menu") || e.target.matches("#yt-unhook-close")) _closeMenu();
   });
 
   // init
   // prettier-ignore
-  $('#yt-unhook-menu form').insertAdjacentHTML('beforeend', S.map(e => `<label><input type="checkbox" name="${e.name}" />${e.name}</label>`).join("\n"));
+  $('#yt-unhook-menu form .content').insertAdjacentHTML('beforeend', S.map(e => `<label><input type="checkbox" name="${e.name}" />${e.name}</label>`).join("\n"));
   $('#yt-unhook-menu form').onchange = _formChange;
 
   _inject();
@@ -45,9 +45,13 @@ const Unhook = (function () {
   $('#yt-unhook-menu').classList.add('unhook-hidden'); // hide menu by default
 
   // f(x)
+  function _closeMenu() {
+    $('#yt-unhook-menu').classList.add('unhook-hidden');
+  }
+
   function _getStorage() {
     const savedStyles = localStorage.getItem(STORAGE_KEY);
-    if (savedStyles !== undefined) {
+    if (!!savedStyles) {
       let arr = JSON.parse(savedStyles);
       [...$('#yt-unhook-menu form').querySelectorAll('input')].forEach((i) => (i.checked = arr.includes(i.name)));
     }
