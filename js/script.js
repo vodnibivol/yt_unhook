@@ -40,11 +40,12 @@ const Unhook = (function () {
   // f(x)
   function _inject() {
     document.body.appendChild(STYLE_EL);
+    console.log('INJECT ELEMENT STYLES');
   }
 
   function _setStyle(styles) {
     STYLE_EL.innerHTML = styles;
-    console.log(styles);
+    console.log('SET ELEMENT STYLES');
   }
 
   function _formChange() {

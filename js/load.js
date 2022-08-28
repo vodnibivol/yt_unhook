@@ -1,3 +1,10 @@
+// ==UserScript==
+// @name        yt_unhook_js
+// @description remove distractions from youtube
+// @match       https://www.youtube.com/*
+// @run-at      document-start
+// ==/UserScript==
+
 const PATH = 'https://raw.githubusercontent.com/vodnibivol/yt_unhook/main/';
 
 /* --- HTML --- */
