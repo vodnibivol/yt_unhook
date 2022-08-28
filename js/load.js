@@ -1,3 +1,8 @@
+/* --- CSS --- */
+
+const STYLE_URL = 'https://raw.githack.com/vodnibivol/yt_unhook/main/css/style.css';
+document.head.insertAdjacentHTML('beforeend', `<link rel="stylesheet" href="${STYLE_URL}">`);
+
 /* --- HTML --- */
 
 const HTML = `\
@@ -6,11 +11,6 @@ const HTML = `\
 `;
 
 document.body.insertAdjacentHTML('beforeend', HTML);
-
-/* --- CSS --- */
-
-const STYLE_URL = 'https://raw.githack.com/vodnibivol/yt_unhook/main/css/style.css';
-document.head.insertAdjacentHTML('beforeend', `<link rel="stylesheet" href="${STYLE_URL}">`);
 
 /* --- JS --- */
 
