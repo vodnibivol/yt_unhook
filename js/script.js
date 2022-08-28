@@ -1,7 +1,6 @@
 class Element {
   constructor(selector, name, style) {
     this.selector = selector;
-    // this.el = document.querySelector(selector);
     this.name = name;
     this.style = style || '{display:none!important;}';
   }
@@ -32,8 +31,8 @@ const Unhook = (function () {
 
   // init
   // prettier-ignore
-  $('form').insertAdjacentHTML('beforeend', S.map(e => `<label><input type="checkbox" name="${e.name}" />${e.name}</label>`).join("\n"));
-  $('form').onchange = _formChange;
+  $('#yt-unhook-menu form').insertAdjacentHTML('beforeend', S.map(e => `<label><input type="checkbox" name="${e.name}" />${e.name}</label>`).join("\n"));
+  $('#yt-unhook-menu form').onchange = _formChange;
 
   _inject();
 
@@ -49,7 +48,7 @@ const Unhook = (function () {
   }
 
   function _formChange() {
-    let checked = [...$('form').querySelectorAll('input')].filter((e) => e.checked).map((e) => e.name);
+    let checked = [...$('#yt-unhook-menu form').querySelectorAll('input')].filter((e) => e.checked).map((e) => e.name);
     let filtered = S.filter((e) => checked.includes(e.name));
     let style = filtered.map((e) => e.selector + e.style).join(' ');
     _setStyle(style);
