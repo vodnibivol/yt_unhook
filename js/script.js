@@ -54,32 +54,29 @@ const Unhook = (function () {
 
 const ATTRS = [
   { for: 'button_left', name: 'Move Button to Left' },
-  { for: 'hide_feed', name: 'Hide Home Feed' },
-  { for: 'hide_redirect_home', name: 'Redirect to Subscriptions' },
-  // { for: 'sidebar_tree', name: '' },
-  { for: 'hide_sidebar', name: 'Hide Video Sidebar' },
-  { for: 'hide_recommended', name: 'Hide Recommended' },
-  { for: 'hide_chat', name: 'Hide Live Chat' },
-  { for: 'hide_playlists', name: 'Hide Playlist' },
-  { for: 'hide_donate', name: 'Hide Fundraiser' },
-  { for: 'hide_transcript', name: 'Hide Transcript, Chapters' },
+  { for: 'hide_sign_in', name: 'Hide Sign-in Promo' },
+
+  { for: 'hide_feed', name: 'Hide Home Feed' }, // NOTE: submenu
+  // { for: 'hide_redirect_home', name: 'Redirect to Subscriptions' },
+  { for: 'hide_sidebar', name: 'Hide Video Sidebar' }, // NOTE: submenu
+  // { for: 'hide_recommended', name: 'Hide Recommended' },
+  // { for: 'hide_chat', name: 'Hide Live Chat' },
+  // { for: 'hide_playlists', name: 'Hide Playlist' },
+  // { for: 'hide_donate', name: 'Hide Fundraiser' },
+  // { for: 'hide_transcript', name: 'Hide Transcript, Chapters' },
   { for: 'hide_endscreen', name: 'Hide End Screen Feed' },
   { for: 'hide_cards', name: 'Hide End Screen Cards' },
-  // { for: 'comment_tree', name: '' },
-  { for: 'hide_comments', name: 'Hide Comments' },
-  { for: 'hide_prof', name: 'Hide Profile Photos' },
+  { for: 'hide_comments', name: 'Hide Comments' }, // NOTE: submenu
+  // { for: 'hide_prof', name: 'Hide Profile Photos' },
   { for: 'hide_mix', name: 'Hide Mixes' },
   { for: 'hide_merch', name: 'Hide Merch, Tickets, Offers' },
-  // { for: 'meta_tree', name: '' },
-  { for: 'hide_meta', name: 'Hide Video Info' },
-  { for: 'hide_bar', name: 'Hide Buttons Bar' },
-  { for: 'hide_channel', name: 'Hide Channel' },
-  { for: 'hide_desc', name: 'Hide Description' },
-  // { for: 'header_tree', name: '' },
-  { for: 'hide_header', name: 'Hide Top Header' },
+  { for: 'hide_meta', name: 'Hide Video Info' }, // NOTE: submenu
+  // { for: 'hide_bar', name: 'Hide Buttons Bar' },
+  // { for: 'hide_channel', name: 'Hide Channel' },
+  // { for: 'hide_desc', name: 'Hide Description' },
+  { for: 'hide_header', name: 'Hide Top Header' }, // NOTE: submenu
   { for: 'hide_notifs', name: 'Hide Notifications' },
-  // { for: 'left_tree', name: '' },
-  { for: 'hide_left', name: 'Hide Left Sidebar Extra' },
+  // { for: 'hide_left', name: 'Hide Left Sidebar Extra' }, // NOTE: submenu
   { for: 'hide_channels', name: 'Hide Channels' },
   { for: 'hide_bestyt', name: 'Hide Best of YouTube' },
   { for: 'hide_moreyt', name: 'Hide More from YouTube' },
@@ -87,8 +84,9 @@ const ATTRS = [
   { for: 'hide_trending', name: 'Hide Explore, Trending' },
   { for: 'hide_shorts', name: 'Hide Shorts Tab' },
   { for: 'hide_subs', name: 'Hide Subscriptions' },
-  { for: 'hide_autoplay', name: 'Disable Autoplay' },
-  { for: 'hide_annotations', name: 'Disable Annotations' },
+
+  // { for: 'hide_autoplay', name: 'Disable Autoplay' },
+  // { for: 'hide_annotations', name: 'Disable Annotations' },
 ];
 
 Unhook.init();
