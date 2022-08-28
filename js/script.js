@@ -25,6 +25,7 @@ const Unhook = (function () {
     new Element('.html5-endscreen', 'endscreen'),
     new Element('#primary.ytd-watch-flexy', 'center', '{position:relative;left:49%;transform:translateX(-50%);}'),
     new Element('#ytd-guide-signin-promo-renderer,a[href*="Login"]', 'login promo'),
+    new Element('#yt-unhook-btn', 'button left', "{left: 0;}"),
   ];
 
   // events
@@ -39,6 +40,7 @@ const Unhook = (function () {
   $('#yt-unhook-menu form').onchange = _formChange;
 
   _inject();
+  _formChange(); // trigger setStyles
   $('#yt-unhook-menu').classList.add('unhook-hidden'); // hide menu by default
 
   // load localStorage
