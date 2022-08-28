@@ -54,7 +54,7 @@ const HTML = `\
 document.body.insertAdjacentHTML('beforeend', HTML);
 
 /* --- JS --- */
-const ATTRS = [
+window.ATTRS = [
   { for: 'hide_sign_in', name: 'Hide Sign-in Promo' },
 
   { for: 'hide_feed', name: 'Hide Home Feed' }, // NOTE: submenu
