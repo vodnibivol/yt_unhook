@@ -75,6 +75,7 @@ const ATTRS = [
   // { for: 'hide_channel', name: 'Hide Channel' },
   // { for: 'hide_desc', name: 'Hide Description' },
   { for: 'hide_header', name: 'Hide Top Header' }, // NOTE: submenu
+  { for: 'hide_search_on_video', name: 'Hide Search on Video' },
   { for: 'hide_notifs', name: 'Hide Notifications' },
   // { for: 'hide_left', name: 'Hide Left Sidebar Extra' }, // NOTE: submenu
   { for: 'hide_channels', name: 'Hide Channels' },
